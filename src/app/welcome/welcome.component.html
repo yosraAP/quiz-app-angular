@@ -1,0 +1,17 @@
+<div class="container mx-auto">
+<div class="welcome">
+  <h1 class="title_welcome">Quiz app!</h1>
+  <div class="quizzes">
+    <mat-card class="quiz" *ngFor="let quiz of quiz">
+      <mat-card-title>{{quiz.label}}</mat-card-title>
+      <mat-card-content>{{quiz.description}}</mat-card-content>
+      <mat-card-actions>
+        <a class="btn btn-warning rounded-pill" routerLink="/{{quiz.name}}">Start quiz</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<div class="image-container">
+<img src="../../assets/quiz.gif" alt="" class="rounded-pill">
+</div>
+</div>

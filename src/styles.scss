@@ -1,0 +1,51 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$squizz-primary: mat-palette($mat-blue);
+$squizz-accent: mat-palette($mat-blue, A200, A100, A400);
+$squizz-warn: mat-palette($mat-blue);
+$squizz-theme: mat-light-theme($squizz-primary, $squizz-accent, $squizz-warn);
+@include angular-material-theme($squizz-theme);
+$primary-font:'Ubuntu', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+
+
+html,
+body {
+  height: 100%;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 20px;
+  background-image: url('../src/assets/bg.gif');
+  line-height: 1.6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+h1{
+  margin: 0;
+  font-size: 3em;
+  font-family: $secondary-font
+}
+
+
+p {
+  text-align: left;
+  width: 90%;
+  margin: auto
+}
+
+@media all and (max-width: 750px) {
+
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+
+  html,
+  body,
+  a {
+    font-size: 16px;
+  }
+}

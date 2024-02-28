@@ -1,0 +1,29 @@
+$primary-color: #5C6BC0;
+$tertiary-color: rgba(255, 255, 255, 0.611);
+$primary-font:'Ubuntu', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+
+
+.results {
+  max-width: 80%;
+  padding: 5%;
+  padding-top: 2%;
+  background-color: $tertiary-color;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 5%;
+}
+
+.answer.correct:before {
+  content: '\2713';
+  display: inline-block;
+  color: rgb(7, 99, 7);
+  padding: 0 6px 0 0;
+}
+
+.answer:not(.correct):before {
+  content: "\2717";
+  display: inline-block;
+  color: rgb(182, 10, 10);
+  padding: 0 6px 0 0;
+}

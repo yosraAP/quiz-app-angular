@@ -1,0 +1,22 @@
+.questions {
+  max-width: 60%;
+  padding: 5%;
+  padding-top: 2%;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.799),  rgba(255, 255, 255, 0.42)); 
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 5%;
+}
+
+.btnNext{
+  background-image: linear-gradient(to bottom right, rgba(12, 2, 43),  rgb(5, 89, 105)); 
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+}
+
+@media all and (max-width: 750px) {
+  button {
+    font-size: 16px;
+  }
+}
